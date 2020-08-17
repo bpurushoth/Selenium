@@ -35,9 +35,7 @@
             <artifactId>allure-testng</artifactId>
             <version>${allure.version}</version>
             <scope>test</scope>
-	    <configuration>
-    		<reportDirectory>allure-report</reportDirectory>	
-	    </configuration>
+	    
     </dependency>
     <dependency>
     	<groupId>org.seleniumhq.selenium</groupId>
@@ -137,10 +135,10 @@
 			<suiteXmlFiles>  
 			<suiteXmlFile>testng.xml</suiteXmlFile>  
 			</suiteXmlFiles>  
-				<argLine>
-            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-        </argLine>
-
+			<argLine>
+            		-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+       			</argLine>
+    			<reportDirectory>allure-report</reportDirectory>
 			</configuration>  
 		</plugin>  
 		    <plugin>
@@ -184,3 +182,5 @@
     </plugins>
 </reporting>
 </project>
+
+
