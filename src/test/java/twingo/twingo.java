@@ -23,7 +23,7 @@ public void twingo(WebDriver driver) {
 	// get the current URL of the page  
 	String URL= driver.getCurrentUrl(); 
 	String title1 = driver.getTitle();
-	String ExpectedTitle1 = "Sign in to your account";
+	String ExpectedTitle1 = "Sign in to your accoun";
 	Assert.assertEquals(title1, ExpectedTitle1);
 	
 }   
